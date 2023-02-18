@@ -1,0 +1,115 @@
+:root{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --myfont: sans-serif;
+    --my-btn-font: sans-serif;
+    --lg-lightcolor:linear-gradient(to left, rgba(116,235,213,0.6), rgba(159,172,230,0));
+    --lg-color: linear-gradient(to left, #74ebd5, #9face6);
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px white;
+    overflow: hidden;
+    max-width: 100%;
+}
+.header{
+    background: var(--lg-color);
+    padding: 30px 0;
+}
+.header h2{
+    color:black;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.form{
+    padding: 40px;
+
+}
+.control{
+    margin-bottom: 20px;
+    position: relative;
+}
+.rdb{
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+.lang{
+    margin-bottom: 20px;
+}
+.control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.control input{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 12px;
+}
+.control input:focus{
+    outline: 0;
+    border-color: #9face6;
+    cursor: pointer;
+    background-color:rgb(208, 202, 214);
+}
+.control.success input{
+    border-color: rgb(24, 187, 24);
+}
+.control.error input{
+    border-color: red;
+}
+.control i{
+    position: absolute;
+    right: 8%;
+    top: 38px;
+    visibility: hidden;
+}
+.control.success i.fa-circle-check{
+    color: rgb(24, 155, 24);
+    visibility: visible;
+}
+.control.error i.fa-exclamation-circle{
+    color:rgb(218, 12, 12);
+    visibility: visible;
+}
+.control span{
+    color:rgb(206, 18, 18);
+    position:absolute;
+    font-size: 12px;
+    visibility: hidden;
+}
+.control.error span{
+    visibility: visible;
+}
+.form .btn{
+    background: var(--lg-color);
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 15px 0;
+    margin-top: 20px;
+
+}
+@media(max-width: 998px){
+    .container{
+        max-width: 100%;
+    }
+}
